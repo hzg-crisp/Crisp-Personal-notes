@@ -587,7 +587,7 @@ MapperRedistry：注册绑定我们的Mapper文件
 
 **不同作用域和生命周期类别是至关重要的，因为错误的使用会导致非常严重的。** 
 
-![image-20210813165233899](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813165233899.png)
+![image-20210813165233899](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813165233899.png)
 
 **SqlSessionFactoryBuilder:**
 
@@ -615,7 +615,7 @@ MapperRedistry：注册绑定我们的Mapper文件
 - SqlSession的实例不是线程安全的，因此是不能被共享的，所以他的最佳的作用域是请求或方法作用域
 - 用完之后需要赶紧关闭，否则资源浪费。
 
-![image-20210813170503671](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813170503671.png)
+![image-20210813170503671](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813170503671.png)
 
 
 
@@ -625,11 +625,11 @@ MapperRedistry：注册绑定我们的Mapper文件
 
 #### 1.数据库中的字段：
 
-![image-20210813200558598](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813200558598.png)
+![image-20210813200558598](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813200558598.png)
 
 新建一个文件夹，拷贝之前的，测试实体类字段不一致的情况。
 
-![image-20210813200727057](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813200727057.png)
+![image-20210813200727057](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813200727057.png)
 
 测试出现的问题：
 
@@ -689,7 +689,7 @@ id name password
 
 现在：日志工厂！
 
-![image-20210813215837775](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813215837775.png)
+![image-20210813215837775](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813215837775.png)
 
 - SLF4J 
 - LOG4J 【掌握】
@@ -718,7 +718,7 @@ STDOUT_LOGGING标准日志输出、
 
 
 
-![image-20210813221700813](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210813221700813.png)
+![image-20210813221700813](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813221700813.png)
 
 #### 2.LOG4J：
 
@@ -781,7 +781,7 @@ log4j.logger.java.sql.PreparedStatement=DEBUG
 
 4.log4的使用：直接测试运行刚才的查询。
 
-![image-20210814142901324](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210814142901324.png)
+![image-20210814142901324](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210814142901324.png)
 
 **简单的使用:**
 
@@ -982,7 +982,7 @@ public interface UserMapper {
 
 多对一：
 
-![image-20210816145605246](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210816145605246.png)
+![image-20210816145605246](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210816145605246.png)
 
 - 多个学生，对应一个老师
 - 对于学生这边而言，关联，，多个学生，关联一个老师（多对一）
@@ -1335,7 +1335,7 @@ if  where  set  choose  when
 
 至此，我们已经完成了与 XML 配置及映射文件相关的讨论。下一章将详细探讨 Java API，以便你能充分利用已经创建的映射配置。
 
-![image-20210817214121363](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210817214121363.png)
+![image-20210817214121363](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210817214121363.png)
 
 ```xml
     <!--    
@@ -1369,7 +1369,7 @@ if  where  set  choose  when
     我们再次查询相同的数据的时候，直接走缓存，就不用了走数据库了
 ```
 
-![image-20210817215818989](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210817215818989.png)
+![image-20210817215818989](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210817215818989.png)
 
 ### 2.Mybatis缓存
 
@@ -1390,7 +1390,7 @@ if  where  set  choose  when
 - 开启日志
 - 测试在一个SqlSession中查询两次相同的记录
 - 查看日志输出：
-- ![image-20210818090835086](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818090835086.png)
+- ![image-20210818090835086](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818090835086.png)
 
 - 缓存失效： 
 
@@ -1402,7 +1402,7 @@ if  where  set  choose  when
 
   - 手动清理缓存
 
-    ![image-20210818092104783](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818092104783.png)
+    ![image-20210818092104783](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818092104783.png)
 
 **小结：**
 
@@ -1448,7 +1448,7 @@ if  where  set  choose  when
 
 3. 测试：问题：我们需要将实体类序列化！否则的话会报错！
 
-   ![image-20210818104709874](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818104709874.png)
+   ![image-20210818104709874](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818104709874.png)
 
 小结：
 
@@ -1458,7 +1458,7 @@ if  where  set  choose  when
 
 ## 5.缓存原理
 
-![image-20210818105542912](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818105542912.png)
+![image-20210818105542912](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818105542912.png)
 
 # 代理模式
 
@@ -1469,7 +1469,7 @@ if  where  set  choose  when
 - 静态代理
 - 动态代理
 
-![image-20210818153604064](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818153604064.png)
+![image-20210818153604064](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818153604064.png)
 
 ## 1.静态代理：
 
@@ -1570,7 +1570,7 @@ if  where  set  choose  when
 
 **了解Aop**
 
-![image-20210818163802395](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210818163802395.png)
+![image-20210818163802395](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210818163802395.png)
 
 ## 2.动态代理
 
@@ -2042,9 +2042,9 @@ name为注解的参数名 ，default 后面的是默认值，如果我们不设�
 
 ## 反射：
 
-![image-20210814211722824](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210814211722824.png)
+![image-20210814211722824](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210814211722824.png)
 
-![image-20210814211759861](C:/Users/16337/AppData/Roaming/Typora/typora-user-images/image-20210814211759861.png)
+![image-20210814211759861](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210814211759861.png)
 
 ### 类加载
 
@@ -2263,7 +2263,7 @@ name.setAccessible(true);  // 设置安全检测关闭
 name.set(user4,"ziop")
 ```
 
-![image-20210813205644158](https://gitee.com/Ziop/typora-img/raw/master/img/image-20210813205644158.png)
+![image-20210813205644158](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813205644158.png)
 
 ### 关闭安全检测可以提高执行效率（但是不推荐使用）
 
@@ -2271,7 +2271,7 @@ name.set(user4,"ziop")
 name.setAccessible(true);  // 设置安全检测关闭
 ```
 
-![image-20210813215437312](https://gitee.com/Ziop/typora-img/raw/master/img/image-20210813215437312.png)
+![image-20210813215437312](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813215437312.png)
 
 ### 获取泛型类型
 
@@ -2283,9 +2283,9 @@ method.getGenericParamaterTypes();    获取参数类型
 
 如果想要获取泛型里面的类型，则需要判断他是否属于一个参数化类型，如果是的话则提取出来 
 
-![image-20210813214544697](https://gitee.com/Ziop/typora-img/raw/master/img/image-20210813214544697.png)
+![image-20210813214544697](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813214544697.png)
 
-![image-20210813215009848](https://gitee.com/Ziop/typora-img/raw/master/img/image-20210813215009848.png)
+![image-20210813215009848](https://gitee.com/hzg-sss/typora-picture/raw/master/img/image-20210813215009848.png)
 
 ```java
 method.getgenericReturnType(); //获取返回值的泛型

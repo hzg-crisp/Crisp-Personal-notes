@@ -22,7 +22,7 @@
 
 **最典型的MVC就是JSP + servlet + javabean的模式。**
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklYVzdXbW05S1ZFVjFGWFVmSk1EMEt6dVlaN2ljNVVIZ2dzWkRBenlZeXJkNHBMdm5CSVZNNXpBLzY0MA?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklYVzdXbW05S1ZFVjFGWFVmSk1EMEt6dVlaN2ljNVVIZ2dzWkRBenlZeXJkNHBMdm5CSVZNNXpBLzY0MA)
 
 
 
@@ -31,7 +31,7 @@
 
 Model1中，主要分为两层，视图层和模型层。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklXZThSUGNDVWVleG9qQmlhUHRZN0hpYlFvblMzUGRDeTk4b1YyNEYwdFlrOEl4RVVZNDNOOTNUQS82NDA?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklXZThSUGNDVWVleG9qQmlhUHRZN0hpYlFvblMzUGRDeTk4b1YyNEYwdFlrOEl4RVVZNDNOOTNUQS82NDA)
 
 Model1优点：架构简单，比较适合小型项目开发；
 
@@ -40,7 +40,7 @@ Model1缺点：JSP职责不单一，职责过重，不便于维护；
 ### 1.3、Model2时代
 Model2把一个项目分成三部分，包括视图、控制、模型。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklDS3N6cXkyd1plbWtLN1hpYkNRd0VuNzk1dW85Y1JTN0VRd2pUOFg3R3UyTnVhbklKZlVRWDZRLzY0MA?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklDS3N6cXkyd1plbWtLN1hpYkNRd0VuNzk1dW85Y1JTN0VRd2pUOFg3R3UyTnVhbklKZlVRWDZRLzY0MA)
 
 1. 用户发请求
 
@@ -256,17 +256,17 @@ Spring的web框架围绕DispatcherServlet设计。DispatcherServlet的作用是�
 
 Spring MVC框架像许多其他MVC框架一样, **以请求为驱动 , 围绕一个中心Servlet分派请求及提供其他功能，DispatcherServlet是一个实际的Servlet (它继承自HttpServlet 基类)。**
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCakk3RU51MGpOaWJQaWFpYWlhQmh5eDZvOVVVeVU4Mk1kZGc0RGp3em5pYWN6bVRMUmJBdEk5cEtKcTF0US82NDA?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCakk3RU51MGpOaWJQaWFpYWlhQmh5eDZvOVVVeVU4Mk1kZGc0RGp3em5pYWN6bVRMUmJBdEk5cEtKcTF0US82NDA)
 
 SpringMVC的原理如下图所示：
 
 当发起请求时被前置的控制器拦截到请求，根据请求参数生成代理请求，找到请求对应的实际控制器，控制器处理请求，创建数据模型，访问数据库，将模型响应给中心控制器，控制器使用模型与视图渲染视图结果，将结果返回给中心控制器，再将结果返回给请求者。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklhb3NWemljbFdMRUpRa3pvYnhIcnBIY210dTJ5VGVWV1BtRUk0WXE1UGFpY1M1MlZhSnQ4ZFlmUS82NDA?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklhb3NWemljbFdMRUpRa3pvYnhIcnBIY210dTJ5VGVWV1BtRUk0WXE1UGFpY1M1MlZhSnQ4ZFlmUS82NDA)
 
 ### 2.3、SpringMVC执行原理
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklibVBPa1k4VHhGNnF2R0FHWHhDN2RBclljcjh1SmxXb1ZDNGFGNGJmeGdDR0NEOHNIZzhtZ3cvNjQw?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3S3dQT1BXcTAwcE1KaWFLODZsRjZCaklibVBPa1k4VHhGNnF2R0FHWHhDN2RBclljcjh1SmxXb1ZDNGFGNGJmeGdDR0NEOHNIZzhtZ3cvNjQw)
 
 
 图为SpringMVC的一个较完整的流程图，实线表示SpringMVC框架提供的技术，不需要开发者实现，虚线表示需要开发者实现。
@@ -451,7 +451,7 @@ ${msg}
 
 11、配置Tomcat 启动测试！
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5TWtIbnFPS21YZkxsT0FPVjd2RkJ0c0RWWDFsaWJDbmxYd3RDTjNCR0l4V2tpYzhRVmU5d0QybkEvNjQw?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5TWtIbnFPS21YZkxsT0FPVjd2RkJ0c0RWWDFsaWJDbmxYd3RDTjNCR0l4V2tpYzhRVmU5d0QybkEvNjQw)
 
 ### 可能遇到的问题：访问出现404，排查步骤：
 
@@ -651,7 +651,7 @@ ${msg}
 
 配置Tomcat ，  开启服务器 ， 访问 对应的请求路径！
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5M2VKWFl5aWJNT25JV3FxeWU5UllmdTR6ZG5FNW9ZbXhpYVVIYXhBbnZaa1ZFWGx5WHlzUk1oVGcvNjQw?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5M2VKWFl5aWJNT25JV3FxeWU5UllmdTR6ZG5FNW9ZbXhpYVVIYXhBbnZaa1ZFWGx5WHlzUk1oVGcvNjQw)
 
 **OK，运行成功！**
 
@@ -679,4 +679,4 @@ ${msg}
 
 通常，我们只需要手动配置视图解析器，而处理器映射器和处理器适配器只需要开启注解驱动即可，而省去了大段的xml配置
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5enNYRFB5N29BSkZzQnZ2QmliaWFGV3BTcDc1dkZJRU9DQm03d250NEpLWEpDSEI5TWZsVXljS3cvNjQw?x-oss-process=image/format,png)
+![img](https://gitee.com/hzg-sss/typora-picture/raw/master/img/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy91SkRBVUtyR0M3SWljeEJaYmtoMEQ0ZEpKaWFYU3pHRVh5enNYRFB5N29BSkZzQnZ2QmliaWFGV3BTcDc1dkZJRU9DQm03d250NEpLWEpDSEI5TWZsVXljS3cvNjQw)
